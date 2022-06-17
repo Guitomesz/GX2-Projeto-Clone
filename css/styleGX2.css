@@ -1,51 +1,90 @@
-
     .gridContainer{
-        width: 90%;
+        width:100%;
         background: #ccc;
-        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 0.5rem;
     }
 
     .gridItem{
         background-color: #F6F6F7;
         padding: 15px;
-        font-family: sans-serif;
-    }
-
-    .gridContainer{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        grid-gap: 20px;
-    }
+    }    
 
     .header{
         grid-column: 1 / -1;
+        display: flex;
     }
-
-    .nav{
-        grid-column: 1 / -1;
+    
+    .topNavContainer{
+        display: flex;
+        align-items: center;
     }
 
     .topNavLinks{
         display: flex;
-        grid-gap: 2rem;
-    }
-    
-    .topNavLinks, .topNavLinks a{
-        text-decoration: none;
-        list-style: none;
+        margin: 1rem;
     }
 
-    #contactContainer{
+    .topNavLinks, .topNavLinks a{
         display: flex;
-        border: 1px solid red;
+        text-decoration: none;
+        list-style: none;
+        grid-gap: 1rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .logoTopContainer{
+        display: flex;
+        justify-self: left;
+    }
+
+    .menuTopContainer{
+        display: flex;
+        align-items: center;
+    }
+
+    .contactContainer, .contactContainer a{
+        text-decoration: none;
+        display: flex;
         background: #10DFC2;
         border-radius: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 2.5rem;
+        color: white;
     }
 
     .attentionGrabber{
         grid-column: 1 / -1;
-        background-image: url(../images/Background.png);
+        grid-row: 2 / 2;
+        background-image: url(/images/Background.png);
+        padding: 1rem 8rem;
+        display: flex;
+    }
+
+    .attentionLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid red;
+    }
+
+    .attentionLeft h1, h4{
+        color: #FFFFFF;
+        font-weight: lighter;
+    }
+
+    .attentionRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
     }
 
     .about{
@@ -70,8 +109,7 @@
 
     .footer{
         grid-column: 1 / -1;
-        background: red;
-        background: rgba(255, 0, 0, 0.5);
+
     }
 
 
