@@ -1,71 +1,79 @@
-body{
-    font-family: sans-serif;
-}
-.gridContainer{
+
+    .gridContainer{
         width: 90%;
         background: #ccc;
         margin: 30px auto;
-        display: grid;
-        grid-gap: 10px;
-
     }
 
     .gridItem{
-        
+        background-color: #F6F6F7;
+        padding: 15px;
+        font-family: sans-serif;
     }
 
-    button{
-        padding: 0.25rem;
-
-    }
-
-    #calculator{
+    .gridContainer{
         display: grid;
-        width: 200px;
-        background-image: linear-gradient(#b7b7b7, #9c9c9c);
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-        margin: 15px auto;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto repeat(6, 40px);
-        grid-gap: 5px;
-        background: #ddd;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 20px;
     }
-    #display{
-        padding: 10px;
-        font-size: 1.4rem;
-        text-align: right;
-        background-image: linear-gradient(#c5c5c5, #e0e0e0);
-        box-shadow: inset 3px 2px 0 white;
-        margin-bottom: 15px;
+
+    .header{
         grid-column: 1 / -1;
-        background: #ccc;
-
     }
 
-    .times{
-
+    .nav{
+        grid-column: 1 / -1;
     }
 
-    .more{
-        grid-column: 4 / 5;
-        grid-row: 5 / 7;
-        background: #ccc;
-        box-shadow: inset 3px 2px 0 white;
+    .topNavLinks{
+        display: flex;
+        grid-gap: 2rem;
+    }
+    
+    .topNavLinks, .topNavLinks a{
+        text-decoration: none;
+        list-style: none;
     }
 
-    .minus{
-        
+    #contactContainer{
+        display: flex;
+        border: 1px solid red;
+        background: #10DFC2;
+        border-radius: 15px;
     }
 
-    .zero{
-        grid-column: 1 / 3;
-        box-shadow: inset 3px 2px 0 white;
-        background: #ccc;
-
+    .attentionGrabber{
+        grid-column: 1 / -1;
+        background-image: url(../images/Background.png);
     }
 
-    .percentage{
-        
+    .about{
+        grid-column: 1 / -1;
     }
+
+    .how{
+        grid-column: 1 / -1;
+    }
+
+    .main{
+        grid-column: 1 / -1;
+    }
+
+    .requirements{
+        grid-column: 1 / -1;
+    }
+
+    .newsletter{
+        grid-column: 1 / -1;
+    }
+
+    .footer{
+        grid-column: 1 / -1;
+        background: red;
+        background: rgba(255, 0, 0, 0.5);
+    }
+
+
+
+    

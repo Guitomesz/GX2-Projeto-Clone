@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styleGX2.css">
+    <link rel="stylesheet" href="../css/styleGX2.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
 
 </head>
 <body>
-    <h2>Grid Layout</h2>
-        <div class="gridContainer"></div>
-            <div id="calculator">
-                <div id="display">0</div>
-                
-                <button>AC</button> <button class="percentage">%</button> <button class="times">x</button> <button>/</button>
-                <button>7</button> <button>8</button> <button>9</button> <button>=</button>
-                <button>4</button> <button>5</button> <button>6</button> <button class="minus">-</button>
-                <button>1</button> <button>2</button> <button>3</button> <button class="more">+</button>
-                <button class="zero">0</button> <button>,</button>
-
+    <div class="gridContainer">
+        <header class="header gridItem">
+            <div class="topNavContainer">
+                <img src="images/Logo-1.png">
+                <ul>
+                    <li>Soluções</li>
+                    <li>Cases</li>
+                    <li>Carreira</li>
+                    <li>Blog</li>
+                    <li>Sobre</li>
+                </ul>
+                <span id="contact">Contato</span>
             </div>
+        </header>
+        <div class="attentionGrabber gridItem"><img src="/images/Logo-1.png"><legend>Você está pronto(a) para decolar a sua carreira?</legend><img src="/images/Logo Rocket.svg"><img src="/images/Logo Rocket Talents.svg"></div>
+        <div class="about gridItem">about</div>
+        <div class="how gridItem">how</div>
+        <div class="requirements gridItem">requirements</div>
+        <main class="newsletter gridItem">newsletter</main>
+        <footer class="footer gridItem">footer</footer>
+    </div>
+    
 </body>
 </html>
