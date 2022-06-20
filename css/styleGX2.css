@@ -1,5 +1,13 @@
+    .backgroundContainer{
+        width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    }
+    
     .gridContainer{
+        margin: 0 auto;
         width:100%;
+        max-width: 85rem;
         background: white;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -13,12 +21,17 @@
 
     .header{
         grid-column: 2 / -1;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
     }
     
     .topNavContainer{
         display: flex;
         align-items: center;
         justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     .topNavLinks{
@@ -45,16 +58,22 @@
         align-content: center;
     }
 
-    .contactContainer, .contactContainer a{
-        text-decoration: none;
+    .contactContainer{
         display: flex;
-        background: #10DFC2;
-        border-radius: 15px;
+        gap: 1rem;
         align-items: center;
-        justify-content: center;
-        width: 10rem;
+        justify-content: flex-end;
         height: 2.5rem;
+        border-radius: 15px;
+        width: 10rem;
+        background: #10DFC2;
+
+    }
+
+    .contactContainer a{
+        text-decoration: none;
         color: white;
+
     }
 
     .attentionGrabber{
@@ -192,23 +211,35 @@
         background: #F6F6F6;
     }
 
+    .requirements h1{
+        color: #0EAFAC;
+    }
+
     .requirementsUpperSection{
         display: flex;
         grid-column: 1 / -1;
         grid-row: 1 / 1 ;
-        border: 1px solid red;
     }
 
-    .requirementsUpperText{
-        padding-left: 1rem;
-        
+    .requirementsUpperText h1, h3{
+        padding-left: 6rem;
+    }
+
+    .requirementsUpperText ul{
+        padding-left: 7rem;
     }
 
     .requirementsDownerSection{
         display: flex;
         grid-column: 1 / -1;
         grid-row: 2 / 2;
-        border: 1px solid red;
+    }
+
+    .requirementsDownerText h3{
+
+    }
+
+    .requirementsDownerText ul{
 
     }
 
