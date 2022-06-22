@@ -1,25 +1,20 @@
     body{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
     }
     
     .backgroundContainer{
         width: 100%;
+        max-width: 85rem;
         background-color: white;
         margin: 0 auto;
-        max-width: 85rem;
-        
     }
     
     .gridContainer{
         margin: 0 auto;
-        width:100%;
-        max-width: 90rem;
-        min-width: 3rem;
-        background: white;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat (8, 1fr);
-        grid-gap: 0.5rem;
+        grid-template-columns: repeat(auto-fill(2, 1fr));
+        grid-template-rows: repeat(auto-fill(7, 1fr))
     }
 
     .gridItem{
@@ -32,18 +27,12 @@
         grid-column: 1 / -1;
         grid-row: 1 / 1;
         text-align: center;
-        display: flex;
-        
-
+        display: flex;        
     }
     
     .topNavContainer{
         display: flex;
         align-items: center;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        grid-row: 1 / 1;
     }
 
     .topNavLinks{
@@ -61,14 +50,6 @@
 
     .logoTopContainer{
         display: flex;
-        justify-self: left;
-        align-items: flex-start;
-    }
-
-    .menuTopContainer{
-        display: flex;
-        align-content: center;
-        justify-content: center;
     }
 
     .contactContainer{
@@ -88,19 +69,23 @@
     }
 
     .attentionGrabber{
+        display: grid;
         grid-column: 1 / -1;
         grid-row: 2 / 2;
+        grid-template-columns: repeat(2, 1fr);
+        margin:0;
         background-image: url(/images/Background.png);
-        padding: 1rem 8rem;
-        display: flex;
-        grid-column-gap: 10rem;
+        border: 1px solid red;
     }
 
     .attentionLeft{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        border: 1px solid red;
+    }
+
+    .attentionLeft img{
+        width: 5rem;
     }
 
     .attentionLeft h1{
@@ -110,17 +95,17 @@
     .attentionLeft h4{
         color: white;
         font-weight: 300;
-        margin: 0 auto;
+        margin: 0;
     }
-
 
     .attentionRight{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 3.5rem;
-        padding: 5rem;
+    }
+
+    .attentionRight img{
+        height: 9rem;
+        width: 20rem;
     }
 
     .about{
@@ -146,7 +131,6 @@
     }
 
     .aboutLeftContainer h1, h4, h5{
-        margin: 0.7rem;
     }
 
     .aboutRightContainer{
@@ -171,20 +155,19 @@
     }
 
     .how img{
-        margin: 0.5rem 1rem;
+        margin: 0.5rem 0.7rem;
     }
 
     .howMainContainer{
         display: flex;
         grid-column: 2 / 4;
         grid-row: 1 / 1;
-        margin: 0 auto;
         flex-direction: column;
     }
 
     .howMainContainer h1{
         color: #0EAFAC;
-        margin: 0 auto;
+        text-align: center;
     }
     
     .howMainContainer h4{
@@ -193,23 +176,26 @@
 
     .howFirstBox{
         display: flex;
+        grid-column: 1 / 1;
         grid-row: 2 / 2;
     }
 
     .howSecondBox{
         display: flex;
+        grid-column: 2 / 2;
         grid-row: 2 / 2;
-        border: 1px solid red;
     }
 
     .howThirdBox{
         display: flex;
+        grid-column: 3 / 3;
         grid-row: 2 / 2;
     }
 
 
     .howFourthBox{
         display: flex;
+        grid-column: 4 / 4;
         grid-row: 2 / 2;
     }
 
@@ -226,23 +212,25 @@
         flex-direction: column;
         box-shadow: 0px 0px 10px #00000029;
         width: 12rem;
-        height: 12rem;
     }
 
     .requirements{
         display: grid;
         grid-column: 1 / -1;
-        grid-row: 5 / 5;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 8rem;
-        padding: 0 8rem;
+        gap: 6rem;
+        padding: 0 10rem;
         margin: 0 auto;
         background: #F6F6F6;
     }
 
-    .requirements h1{
+    .requirements h2{
         color: #0EAFAC;
+    }
+
+    .requirements img{
+        height: 300px;
     }
 
     .requirementsUpperSection{
@@ -251,7 +239,8 @@
         grid-row: 1 / 1 ;
     }
 
-    .requirementsUpperText h1, h3{
+
+    .requirementsUpperText h2, h3{
         padding-left: 6rem;
     }
 
@@ -265,57 +254,58 @@
         grid-row: 2 / 2;
     }
 
-    .requirementsDownerText h3{
 
+    .requirementsDownerText h2, h3{
+        padding-left: 6rem;
     }
 
     .requirementsDownerText ul{
-
+        padding-left: 7rem;
+        margin: 0;
+        border: 1px solid red;
     }
 
     .newsletter{
         display: grid;
-        margin: 0 auto;
         grid-template-columns: repeat(2, 1fr);
         grid-column: 1 / -1;
         grid-row: 6 / 6;
-        padding-left: 5rem;
+        padding: 2rem 0 3rem 4rem;
+        margin: 0;
         color: white;
         background: #19DBD1;
+
     }
 
     .newsletterLeft{
         display: flex;
         flex-direction: column;
+        justify-self: center;
         grid-column: 1 / 1;
-        justify-content: flex-start;
-        border: 1px solid red;
+        justify-content: center;
+        justify-self: center;
+        margin: 0 0 0 15rem;
+
     }
 
     .newsletterLeft h1{
-        margin: 0 auto;
-    }
-
-    .newsletterLeft p{
-        margin: 0 auto;
-        justify-content: center;
-        border: 1px solid red;
-        
-
+        margin: auto 0;
     }
 
     .newsletterRight{
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         grid-column: 2 / 2;
         gap: 0.5rem;
+        margin: 0 0 0 10rem;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        justify-self: auto;
     }
 
     .newsletterRight input{
         border-radius: 0.5rem;
+        width: fit-content;
         border: transparent;
     }
 
@@ -331,34 +321,45 @@
 
     .footer{
         grid-column: 1 / -1;
-        grid-template-columns: repeat(3, 1fr);
+        grid-row: 7 / 7;
         display: grid;
         background: #04254C;
         color: white;
-        justify-content: space-around;
+        padding: 2rem 5rem 2rem 3rem;
+        
     }
 
     .footerLeftContainer{
+        margin: 1rem 0 0 3rem;
         display: flex;        
-        align-items: flex-start;
         grid-column: 1 / 1;
         flex-direction: column;
-        margin: 0 auto;
+    }
 
+    .footerLeftContainer h5{
+        margin: 0 0 1rem 0;
+        font-weight: 300;
+    }
+
+    .footerLeftContainer img{
+        width: 6.5rem;
     }
 
     .btn-phone{
-        width: 8rem;
+        width: 8.5rem;
         border-radius: 0.5rem;
         background: #FFB900;
-        color: white;
         height: 1.8rem;
-        border: transparent;
-
+        text-align: center;
     }
 
     .btn-phone img{
         width: 0.85rem;
+    }
+
+    .btn-phone a{
+        text-decoration: none;
+        color: white;
     }
 
     .footerMiddleContainer{
@@ -369,13 +370,14 @@
     }
 
     .footerMiddleContainer h3{
-        margin: 0 auto;
-        text-align: left;
-        border: 1px solid red;
+        text-indent: 0.5rem;
+        padding: 0;
     }
 
     .footerMiddleContainer ul{
         list-style: none;
+        margin: 0;
+        gap: 1rem;
         display: flex;
         flex-direction: column;
     }
@@ -383,34 +385,24 @@
     .footerRightContainer{
         display: grid;
         grid-column: 3 / 3;
-        flex-direction: column;
-        margin: 0 auto;
-
     }
 
     .footerRightContainer img{
         background: white;
-        width: 1rem;
         height: 1rem;
         border-radius: 5rem;
         border: 1rem solid transparent;
-        margin: 1rem 2rem 0 0;
+        margin: 2rem 2rem;
     }
 
     .footerRightContainer ul{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
         list-style: none;
-        display: grid;
-        grid-template-rows: repeat(2,1fr);
-        justify-content: center;
-        align-items: center;
-        border: 1px solid red;
     }
 
     .footerRightContainer li{
         display: flex;
-        margin: 0 auto;
     }
-
-
-
-    
