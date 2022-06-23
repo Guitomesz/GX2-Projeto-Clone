@@ -95,7 +95,7 @@
         grid-row: 2 / 2;
         grid-template-columns: repeat(2, 1fr);
         margin:0;
-        background-image: url(/images/Background.png);
+        background-image: url(../images/Background.png);
         border: 1px solid #707070;
     }
 
