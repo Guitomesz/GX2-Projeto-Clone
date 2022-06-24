@@ -11,10 +11,7 @@
     }
     
     .backgroundContainer{
-        width: 100%;
-        max-width: 85rem;
         background-color: white;
-        margin: 0 auto;
     }
     
     .gridContainer{
@@ -65,6 +62,9 @@
         display: flex;
         text-decoration: none;
         list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500px;
+        font-size: 18px;
         grid-gap: 3rem;
         color: black;
         
@@ -88,7 +88,9 @@
 
 
     .contact a{
+        font-family: 'Montserrat', sans-serif;
         color: white;
+        font-size: 18px;
         text-decoration: none;
     }
 
@@ -98,7 +100,7 @@
         grid-row: 2 / 2;
         grid-template-columns: repeat(2, 1fr);
         margin:0;
-        background-image: url(../images/Background.png);
+        background: url(../images/Background.png);
         border: 1px solid #707070;
         
     }
@@ -107,20 +109,24 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        text-align: left;
         margin: 4rem 0 0 10rem;
     }
 
     .attentionLeft img{
-        width: 5rem;
+        width: 4rem;
     }
 
-    .attentionLeft h1{
+    .attentionLeft p{
         color: #FFFFFF;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .attentionLeft h4{
         color: white;
         font-weight: 300;
+        font-size: 18px;
         margin: 0;
     }
 
@@ -151,8 +157,21 @@
         padding-right: 3rem;
     }
 
+    .about h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        text-align: left;
+    }
+
     .about h4{
-        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: left;
+    }
+
+    .aboutLeftContainer h5{
+        color: #0EAFAC;
     }
 
     .aboutLeftContainer{
@@ -169,9 +188,7 @@
         justify-content: right;
     }
 
-    .aboutLeftContainer h5{
-        color: #0EAFAC;
-    }
+    
 
     .how{
         display: grid;
@@ -196,11 +213,14 @@
     }
 
     .howMainContainer h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
         color: #0EAFAC;
         text-align: center;
     }
     
     .howMainContainer h4{
+        font-weight: normal;
         text-indent: 1.5rem;
     }
 
@@ -229,7 +249,17 @@
         grid-row: 2 / 2;
     }
 
+    .how h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        margin: 0.5rem;
+        font-weight: 600px;
+    }
+
     .how h6{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
         margin: 0.5rem;
     }
 
@@ -249,6 +279,8 @@
         gap: 6rem;
         padding: 5rem 14rem;
         margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
         background: #FFFFFF;
     }
 
@@ -298,6 +330,7 @@
 
     .requirementsDownerText ul{
         padding-right: 1rem;
+        padding-left: 1rem;
     }
 
     .newsletter{
@@ -306,9 +339,10 @@
         grid-column: 1 / -1;
         grid-row: 6 / 6;
         margin: 0;
+        padding: 3rem 0;font-family: 'Montserrat', sans-serif;
         color: white;
         background: #19DBD1;
-
+        
     }
 
     .newsletterLeft{
@@ -324,6 +358,12 @@
 
     .newsletterLeft h1{
         margin: auto 0;
+    }
+
+    .newsletterLeft p{
+        font-weight: normal;
+        font-size: 16px;
+
     }
 
     .newsletterRight{
@@ -359,20 +399,24 @@
         display: grid;
         background: #04254C;
         color: white;
-        padding: 2rem 5rem 2rem 3rem;
-        
+        padding: 3rem 0;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 5rem 2rem 3rem;
     }
 
     .footerLeftContainer{
-        margin: 1rem 0 0 3rem;
+        margin: 0 0 0 2rem;
         display: flex;        
         grid-column: 1 / 1;
         flex-direction: column;
+        justify-self: center;
+        padding-top: 4rem;
     }
+
 
     .footerLeftContainer h5{
         margin: 0 0 1rem 0;
-        font-weight: 300;
+        font-weight: normal;
     }
 
     .footerLeftContainer img{
@@ -380,11 +424,14 @@
     }
 
     .btn-phone{
-        width: 8.5rem;
+        display: flex;
+        width: 10rem;
         border-radius: 0.5rem;
+        align-items: center;
+        justify-content: center;
         background: #FFB900;
+        gap: 0.5rem;
         height: 1.8rem;
-        text-align: center;
     }
 
     .btn-phone img{
@@ -401,9 +448,13 @@
         grid-column: 2 / 2;
         flex-direction: column;
         align-items: center;
+        padding-top: 1rem;
+        align-self: center;
     }
 
     .footerMiddleContainer h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
         text-indent: 0.5rem;
         padding: 0;
     }
@@ -411,6 +462,7 @@
     .footerMiddleContainer ul{
         list-style: none;
         margin: 0;
+        font-size: 16px;
         gap: 1rem;
         display: flex;
         flex-direction: column;
@@ -418,6 +470,7 @@
 
     .footerRightContainer{
         display: grid;
+        padding-top: 3rem;
         grid-column: 3 / 3;
     }
 
